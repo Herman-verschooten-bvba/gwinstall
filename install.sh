@@ -25,6 +25,4 @@ else
   cd ..
 fi
 
-cd gwserver
-
-echo "Now run sudo install.sh to continue"
+echo "Now cd into gwserver and run sudo ./install.sh to continue"
