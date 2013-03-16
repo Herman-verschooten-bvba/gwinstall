@@ -1,4 +1,3 @@
-gwinstall
-=========
+*GratWiFi Server Router installation script*
 
-GratWiFi Server Installer Script
+(c) 2013 Herman verschooten
