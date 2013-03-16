@@ -18,7 +18,8 @@ cd gwserver
 
 echo "Installing Ruby using RVM"
 
-bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+curl -L get.rvm.io | bash -s stable
+
 . /usr/local/rvm/scripts/rvm
 
 
