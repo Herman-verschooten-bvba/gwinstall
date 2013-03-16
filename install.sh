@@ -20,7 +20,8 @@ else
     git init
     git remote add origin https://github.com/Herman-verschooten-bvba/gwserver.git 
   fi
-  git pull origin master
+  git fetch origin
+  git reset --hard origin/master
   cd ..
 fi
 
