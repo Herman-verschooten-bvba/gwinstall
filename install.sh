@@ -11,7 +11,18 @@ if [ ! $(which git) ]; then
 fi
 
 echo "Downloading gwserver"
-git clone https://github.com/Herman-verschooten-bvba/gwserver.git 
+
+if [ ! -d "gwserver" ]; then
+  git clone https://github.com/Herman-verschooten-bvba/gwserver.git 
+else
+  cd gwserver
+  if [ ! -d '.git']; then
+    git init
+    git remote add origin https://github.com/Herman-verschooten-bvba/gwserver.git 
+  fi
+  git pull origin master
+  cd ..
+fi
 
 cd gwserver
 
