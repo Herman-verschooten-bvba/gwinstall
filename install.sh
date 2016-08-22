@@ -8,6 +8,7 @@
 if [ ! $(which git) ]; then
   echo "Git is not installed, doing it now."
   sudo apt-get -y install git-core
+  read -p "Wait for git to install"
 fi
 
 echo "Downloading gwserver"
