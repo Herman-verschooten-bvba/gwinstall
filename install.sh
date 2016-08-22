@@ -13,12 +13,12 @@ fi
 echo "Downloading gwserver"
 
 if [ ! -d "gwserver" ]; then
-  git clone git@github.com/Herman-verschooten-bvba/gwserver.git 
+  git clone git@github.com:Herman-verschooten-bvba/gwserver.git 
 else
   cd gwserver
   if [ ! -d '.git' ]; then
     git init
-    git remote add origin git@github.com/Herman-verschooten-bvba/gwserver.git 
+    git remote add origin git@github.com:Herman-verschooten-bvba/gwserver.git 
   fi
   git fetch origin
   git reset --hard origin/master
